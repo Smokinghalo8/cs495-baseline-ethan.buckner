@@ -7,7 +7,10 @@
 >
 >What I did myself: I took the response chatGPT gave me and edited it to make it work for my code, I also created the rest of my Assignment by myself, no need for AI, just Python Documentation.
 >
->AI Response: '# test_calculator.py
+>AI Response:
+
+
+'# test_calculator.py
 
 import unittest
 from calculator import add
@@ -23,6 +26,6 @@ class TestCalculator(unittest.TestCase):
     def test_add_mixed_numbers(self):
         self.assertEqual(add(-1, 1), 0)
 
-if __name__ == '__main__':
+if __name__ == ''__main__'':
     unittest.main()
 '
