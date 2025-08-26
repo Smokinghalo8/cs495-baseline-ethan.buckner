@@ -1,5 +1,5 @@
 import unittest, math
-import sparkplug
+import utils
 
 
 
@@ -10,7 +10,7 @@ class TestMeanCalculation(unittest.TestCase):
         prices = [237.33, 242.84, 248.13]
         expected_mean = sum(prices) / len(prices)
         expected = math.ceil(expected_mean * 100) / 100
-        actualMean = sparkplug.findMeanJustPrices(prices)
+        actualMean = utils.findMeanJustPrices(prices)
         self.assertEqual(actualMean, expected)
         print("Expected Mean: "+str(expected)+"\tActual Mean: "+str(actualMean))
 
@@ -18,7 +18,7 @@ class TestMeanCalculation(unittest.TestCase):
         prices = [236, 227.63, 244.6]
         expected_mean = sum(prices) / len(prices)
         expected = math.ceil(expected_mean * 100) / 100
-        actualMean = sparkplug.findMeanJustPrices(prices)
+        actualMean = utils.findMeanJustPrices(prices)
         self.assertEqual(actualMean, expected)
         print("Expected Mean: "+str(expected)+"\tActual Mean: "+str(actualMean))
 
@@ -26,7 +26,7 @@ class TestMeanCalculation(unittest.TestCase):
         prices = [245.55, 241.84, 217.9]
         expected_mean = sum(prices) / len(prices)
         expected = math.ceil(expected_mean * 100) / 100
-        actualMean = sparkplug.findMeanJustPrices(prices)
+        actualMean = utils.findMeanJustPrices(prices)
         self.assertEqual(actualMean, expected)
         print("Expected Mean: "+str(expected)+"\tActual Mean: "+str(actualMean))
 
